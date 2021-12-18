@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+.customOrgTreeChart path.rd3t-link {
+  stroke: #1c91e4;
+  stroke-width: 3px;
+}
+
+.actionButton {
+  width: 24px;
+  background: transparent;
+  border: solid 1px #4444446b;
+  border-radius: 3px;
+  height: 20px;
+  color: #1c91e4;
+  font-size: 14px;
+}
+.actionButton:hover {
+  background: #1c91e4;
+  color: #fff;
+}
+.actionButton:disabled {
+  opacity: .5;
+}
+
+.spin {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
